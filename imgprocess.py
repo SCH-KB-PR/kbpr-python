@@ -90,7 +90,7 @@ def cv_resize(img, size_key="A4", dpi=300):
     x = mm2px(seg, dpi)
     seg = PaperSizes[size_key]["height"]
     y = mm2px(seg, dpi)
-    downscale = size_key['width']*size_key['height'] < img.shape[0]*img.shape[1]
+    downscale = PaperSizes[size_key]["width"]*PaperSizes[size_key]["height"] < img.shape[0]*img.shape[1]
     if downscale:
         return cv2.resize(img, (x, y), interpolation=cv2.INTER_AREA)
     return cv2.resize(img, (x, y), interpolation=cv2.INTER_CUBIC)
