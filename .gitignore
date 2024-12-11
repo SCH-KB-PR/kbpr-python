@@ -1,0 +1,18 @@
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.gif
+*.tiff
+*.webp
+*.svg
+
+# Ignore PDF files
+*.pdf
+
+# Ignore __pycache__ directory
+__pycache__/
+
+# Ignore .pyc files
+*.pyc
